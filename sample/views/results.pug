@@ -1,0 +1,47 @@
+doctype html
+html
+	head
+		title Nerdologiatron 2.0
+		link(rel="stylesheet", type="text/css", href="/styles/results.css")
+		link(rel="icon", sizes="32x32", href="/images/icon.png")
+		meta(name="viewport", content="width=device-width, user-scalable=no")
+		meta(name="theme-color", content="#030A17")
+		meta(charset="UTF-8")
+
+	body
+		header
+			.aviso 
+				div 
+					| *Dados referentes ao vídeo: 
+					a(href="https://youtu.be/ze0qDsJGOBM") https://youtu.be/ze0qDsJGOBM
+				div *Informações atualizadas a cada 10 minutos
+		
+		#conteudo
+			#sugestoes
+				.titulo
+				.lista
+					each data in suggestions
+						.sugestao
+							a.avatar(href=data.url, style="background-image: url("+data.image+")")
+							.dados
+								a.usuario(href=data.url)= data.author+':'
+								.texto= data.text
+				.linha
+					
+			#duvida
+				.lista
+					each data in questions
+						.duvida
+							.dados
+								a.usuario(href=data.url)= data.author+':'
+								.texto= data.text
+							a.avatar(href=data.url, style="background-image: url("+data.image+")")
+				.titulo
+		
+		footer
+			p 
+				| Projeto open souce no 
+				a(href="https://github.com/rickgbw/nerdologiatron") GitHub
+			p 
+				| Desenvolvido por 
+				a(href="https://github.com/rickgbw") Henrique Moreira

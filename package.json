@@ -1,0 +1,31 @@
+{
+  "name": "nerdologiatron",
+  "version": "2.0.0",
+  "description": "Algoritmo para filtro de comentários de um vídeo, utilizando a API do Youtube.",
+  "main": "src/nerdologiatron.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "keywords": [
+    "nerdologiatron",
+    "nerdologia",
+    "comentarios",
+    "filtro"
+  ],
+  "author": "Henrique Moreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickgbw/nerdologiatron/issues"
+  },
+  "homepage": "https://github.com/rickgbw/nerdologiatron#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "eslint": "^3.19.0",
+	"express": "^4.15.2",
+    "pug": "^2.0.0-beta.12"
+  }
+}

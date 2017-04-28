@@ -1,0 +1,58 @@
+body {
+	background-color: #030A17;
+	background-image: url(/images/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 20px;
+	font-family: Tahoma;
+	font-size: 16px;
+	color: #B6A6C9;
+}
+
+.logo {
+	width: 300px;
+	height: 44px;
+	margin: 0 auto 40px;
+	background-size: 300px 44px;
+	background-image: url(/images/logo.png);
+}
+
+form {
+	width: 300px;
+	background-color: rgba(182,166,201,.15);
+	border-radius: 3px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input {
+	border: 2px solid #B6A6C9;
+	font-size: 16px;
+	padding: 4px;
+	width: 208px;
+}
+
+span {
+	display: inline-block;
+	width: 80px;
+}
+
+button {
+	display: block;
+	border: none;
+	border-radius: 20px;
+	background-color: #B6A6C9;
+	margin: 30px auto 0;
+	font-size: 16px;
+	padding: 10px;
+	color: #000;
+}
+
+button:disabled {
+	background-color: #777;
+}

@@ -1,0 +1,182 @@
+body {
+	background-color: #030A17;
+	background-image: url(/images/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 20px;
+	font-family: Tahoma;
+	font-size: 14px;
+	color: #B6A6C9;
+}
+
+a {
+	color: #B6A6C9;
+}
+
+header {
+	position: relative;
+	background-image: url(/images/topo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 854px;
+	height: 84px;
+	margin: 0 auto;
+}
+
+header .aviso {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: -20px;
+}
+
+#conteudo>div {
+	position: relative;
+}
+
+#conteudo {
+	margin: 0 auto;
+	width: 854px;
+}
+
+#conteudo>div>div {
+	vertical-align: top;
+	display: inline-block;
+}
+
+#conteudo .avatar {
+	background-size: cover;
+	display: inline-block;
+	width: 53px;
+	height: 53px;
+	vertical-align: top;
+	border-radius: 3px;
+}
+
+#conteudo .dados {
+	display: inline-block;
+	width: 353px;
+}
+
+#conteudo .usuario {
+	display: block;
+	margin: 4px 0 16px;
+}
+
+#conteudo .texto {
+	word-break: break-word;
+	width: 100%;
+}
+
+#conteudo .lista>div {
+	margin-bottom: 20px;
+	background-color: rgba(182,166,201,.15);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+#sugestoes .titulo {
+	background-image: url(/images/sugestoes.png);
+	width: 247px;
+	height: 172px;
+}
+
+#sugestoes .lista {
+	width: 442px;
+	padding: 57px 20px 0;
+}
+
+#sugestoes .linha {
+	background-image: url(/images/linha.png);
+	position: absolute;
+	width: 8px;
+	top: 0;
+	bottom: 0;
+}
+
+#sugestoes .avatar {
+	margin-right: 10px;
+	border: 3px solid #1E931F;
+}
+
+#duvida .lista {
+	width: 442px;
+	margin-left: 151px;
+	padding: 40px 20px 0;
+}
+
+#duvida .titulo {
+	background-image: url(/images/duvida.png);
+	width: 206px;
+	height: 143px;
+}
+
+#duvida .avatar {
+	margin-left: 10px;
+	border: 3px solid #9004A6;
+}
+
+#duvida .usuario, #duvida .texto {
+	text-align: right
+}
+
+footer {
+	padding: 50px 0;
+}
+
+.aviso, footer p {
+	font-style: italic;
+	font-size: 12px;
+	margin: 0;
+	text-align: center;
+	opacity: .5;
+}
+
+@media (max-width: 600px) {
+	#conteudo>div>div {
+		display: block;
+	}
+
+	header, #conteudo {
+		width: 100%;
+	}
+	header {
+		background-size: 300px 44px;
+		background-image: url(/images/logo.png);
+	}
+
+	#sugestoes .lista:before {
+		content: "SUGESTÕES";
+		color: #1E931F;
+	}
+
+	#duvida .lista:before {
+		content: "DÚVIDAS";
+		color: #9004A6;
+	}
+
+	#conteudo .lista:before {
+		height: 100px;
+		width: auto;
+		line-height: 100px;
+		font-size: 21px;
+		text-align: center;
+		width: 100%;
+		display: block;
+		padding-top: 20px;
+	}
+
+	#conteudo .titulo, #conteudo .linha {
+		display: none;
+	}
+
+	#conteudo .lista {
+		width: auto;
+		margin-left: 0;
+		padding-top: 0;
+	}
+
+	#conteudo .dados {
+		width: calc(100% - 69px)
+	}
+}

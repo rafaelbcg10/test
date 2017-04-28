@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title Nerdologiatron 2.0
+		link(rel="stylesheet", type="text/css", href="/styles/data.css")
+		meta(name="viewport", content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no")
+		meta(charset="UTF-8")
+
+	body
+		.logo
+		form(action="/", method="post", enctype="application/x-www-form-urlencoded", onsubmit="document.querySelector('button').disabled = true;")
+			label
+				span Key:
+				input(type="text", name="key", value="", required)
+			label
+				span Video ID:
+				input(type="text", name="video", value="ze0qDsJGOBM", required)
+					
+			button Carregar
